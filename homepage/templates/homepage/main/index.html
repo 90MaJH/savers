@@ -1,0 +1,94 @@
+{% extends 'homepage/base/base.html' %}
+
+
+{% block content %}
+{% include 'homepage/inc/index.html' %}
+
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">SAVERS</h1>
+        <p class="text-center">교육소외지역 / 교육소외계층에 새로운 포맷의 교육을 제공합니다.</p>
+        <br>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">과외 패키지 신청</a></p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>한집살리기</h4>
+            <p>느릴지라도 확실한 사회가치를 창출하기 위해 교육적/정서적 지원을 소수의 대상에 집중한다</p>
+            <p><a class="btn btn-default" data-target="#modal" data-toggle="modal">신청하기</a></p>
+        </div>
+        <div class="col-md-4">
+            <h4>Beyond ACADEMY</h4>
+            <p>급변하는 교육과정, 변하지 않는 가치. 교육과정 이면에 담긴 가치를 교육한다.</p>
+            <p><a class="btn btn-default" data-target="#modal" data-toggle="modal">커리큘럼 보기</a></p>
+        </div>
+        <div class="col-md-4">
+            <h4>지역아동센터</h4>
+            <p>지역아동센터와 연계하여 부족한 교육력을 제공하고 자사 커리큘럼에 피드백한다.</p>
+            <p><a class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 알아보기</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <span class="glyphicon glyphicon-pencil"></span>
+                &nbsp; &nbsp; 사원소개
+            </h3>
+        </div>
+        <div class="panel-body">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="media-object" src="/static/homepage/images/jinhyeong.png" alt="마진형" width="100px"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><a href="#">마진형</a>&nbsp;<span class="badge">이력사항</span></h4>
+                    TOEIC (Test Of English for International Communication, 이하 토익)은 미국 ETS(Educational Testing Service)의 주관하에 치르는 영어 능력시험이다. 듣기 및 읽기 시험인 TOEIC, 말하기 및 쓰기 시험인 TOEIC Speaking and Writing Tests 등이 있으며, 보통 토익이라고 말하면 듣기 및 읽기 시험, 토스나 TOEIC Speaking 시험이라고 말하면 말하기 시험을 가리킨다.
+
+                    한국에서는 토익을 주로 일요일에 본다. 토요일에 주로 보는 TOEFL과 차이가 있다.
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="media-object" src="/static/homepage/images/hyein.png" alt="정혜인" width="100px"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><a href="#">정혜인</a>&nbsp;<span class="badge">이력사항</span></h4>
+                    칼리지 보드(College board)에서 주관하는 Scholastic Aptitude Test의 준말이었다. 원래 1900년대 초부터 저 이름으로 불렸으나, "이게 지능시험이냐?"라는 비난을 받자 1990년 "Scholastic Assessment Test"로 바뀐 다음, 1993년 그냥 SAT라는 이름으로 고유명사화되었다. 따라서 현재 SAT는 약자가 아니다.
+
+                    대부분의 미국 대학에 지원하는데 쓰이는 시험. 한마디로 "이 학생이 대학교에서 배울 학문에 접근할 능력이 있는가?"를 판가름하는 시험이라고 할 수 있다.
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="media-object" src="#" alt="노민철" width="100px"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><a href="#">노민철</a>&nbsp;<span class="badge">이력사항</span></h4>
+                    국제수학올림피아드는 대학 교육을 받지 않은 만 20세 미만의 학생을 대상으로 열리는 국제 과학올림피아드의 하나이다. 국제 과학올림피아드들 가운데 가장 큰 규모와 오래된 역사를 자랑하고 있으며 1959년 루마니아의 1회 대회를 시작으로 2015년 태국에서 56회[1]째가 열린 이 대회에 무려 114개국이 참가한다. 41회 IMO는 대한민국의 대전에서 개최되었다. 초창기에는 동구권 국가들만 참가했으나 갈수록 참가국이 늘고 있다.
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img class="media-object" src="/static/homepage/images/jooseung.png" alt="정주승" width="100px"></a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><a href="#">정주승</a>&nbsp;<span class="badge">이력사항</span></h4>
+                    TOEIC (Test Of English for International Communication, 이하 토익)은 미국 ETS(Educational Testing Service)의 주관하에 치르는 영어 능력시험이다. 듣기 및 읽기 시험인 TOEIC, 말하기 및 쓰기 시험인 TOEIC Speaking and Writing Tests 등이 있으며, 보통 토익이라고 말하면 듣기 및 읽기 시험, 토스나 TOEIC Speaking 시험이라고 말하면 말하기 시험을 가리킨다.
+
+                    한국에서는 토익을 주로 일요일에 본다. 토요일에 주로 보는 TOEFL과 차이가 있다.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'homepage/inc/footer.html' %}
+
+
+
+{% endblock %}

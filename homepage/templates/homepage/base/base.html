@@ -1,0 +1,28 @@
+{% load static %}
+
+{% include 'homepage/inc/docType.html' %}
+<html>
+<head>
+  {% include 'homepage/inc/meta.html' %}
+  <title>SAVERS</title>
+  {% include 'homepage/inc/scriptInclude.html' %}
+  {% block javascript %}
+  {% endblock %}
+</head>
+<body>
+    <div class="wrapper">
+    {% include 'homepage/inc/header.html' %}
+    {% block content %}
+    {% endblock %}
+    </div>
+<script type="text/javascript">
+    {% if messages %}
+    $(function(){
+        {% for message in messages %}
+        alert("{{ message }}")
+        {% endfor %}
+    })
+    {%  endif %}
+</script>
+</body>
+</html>
