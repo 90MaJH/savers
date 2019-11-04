@@ -1,1 +1,22 @@
-{{ posts }}
+{% extends 'homepage/base/base.html' %}
+
+
+
+
+
+{% block content %}
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.content|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+
+
+{% include 'homepage/inc/footer.html' %}
+{% endblock %}

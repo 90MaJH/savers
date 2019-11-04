@@ -15,6 +15,9 @@ def test(request):
         form = PostForm(request.POST)
         if form.is_valid():
             obj = Post(title=form['title'].value(), content=form['content'].value())
+            print("############")
+            print(Post)
+            print(obj)
             obj.save()
             return HttpResponse("success")
         return("fail")
@@ -24,8 +27,12 @@ def test(request):
 
 
 def listTest(request):
-    posts = Post.Objects.all()
-    return render(request, 'homepage/test/listTest.html', {'Posts': posts})
+    posts = Post.objects.all()
+    print(posts)
+    return render(request, 'homepage/test/listTest.html', {'posts': posts})
 
 def index(request):
     return render(request, 'homepage/main/index.html', {})
+
+def findSenior(request):
+    return render(request, 'homepage/findSenior/findSenior.html', {})
