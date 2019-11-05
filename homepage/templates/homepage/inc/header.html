@@ -4,11 +4,12 @@
             <a class="navbar-brand" href="index">SAVERS</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="index">About</a></li>
-            <li><a href="findSenior">시니어찾기</a></li>
+            <li id="index"><a href="index">About</a></li>
+            <li id="findSenior"><a href="findSenior">시니어찾기</a></li>
             <li><a href="#">나의성장실록</a></li>
-            <li><a href="test">글쓰기테스트</a></li>
-            <li><a href="listTest">글목록테스트</a></li>
+            <li id="test"><a href="test">글쓰기테스트</a></li>
+            <li id="listTest"><a href="listTest">글목록테스트</a></li>
+            <li id="mapTest"><a href="mapTest">지도테스트</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="signin"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -16,3 +17,22 @@
         </ul>
     </div>
 </nav>
+
+{% block javascript %}
+<script type="text/javascript">
+{% if url == "index" %}
+    $( "#index" ).addClass( 'active' );
+{% elif url == "findSenior" %}
+    $( "#findSenior" ).addClass( 'active' );
+{% elif url == "test" %}
+    $( "#test" ).addClass( 'active' );
+{% elif url == "listTest" %}
+    $( "#listTest" ).addClass( 'active' );
+{% elif url == "mapTest" %}
+    $( "#mapTest" ).addClass( 'active' );
+
+{% endif %}
+
+</script>
+
+{% endblock %}

@@ -10,4 +10,5 @@ urlpatterns = [
     path('findSenior', views.findSenior, name='findSenior'),
     path('test', views.test, name='test'),
     path('listTest', views.listTest, name='listTest'),
+    path('mapTest', views.mapTest, name='mapTest'),
 ]

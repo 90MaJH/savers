@@ -11,6 +11,7 @@ from homepage.forms import PostForm
 
 
 def test(request):
+    url = "test"
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
@@ -23,16 +24,23 @@ def test(request):
         return("fail")
     elif request.method == 'GET':
         form = PostForm()
-        return render(request, 'homepage/test/test.html', {'form': form})
+        return render(request, 'homepage/test/test.html', {'form': form, 'url': url})
 
 
 def listTest(request):
+    url = "listTest"
     posts = Post.objects.all()
     print(posts)
-    return render(request, 'homepage/test/listTest.html', {'posts': posts})
+    return render(request, 'homepage/test/listTest.html', {'posts': posts, 'url': url})
 
 def index(request):
-    return render(request, 'homepage/main/index.html', {})
+    url = "index"
+    return render(request, 'homepage/main/index.html', {'url':url})
 
 def findSenior(request):
-    return render(request, 'homepage/findSenior/findSenior.html', {})
+    url = "findSenior"
+    return render(request, 'homepage/findSenior/findSenior.html', {'url':url})
+
+def mapTest(request):
+    url = "mapTest"
+    return render(request, 'homepage/test/mapTest.html', {'url':url})
