@@ -10,10 +10,11 @@
             <li id="test"><a href="test">글쓰기테스트</a></li>
             <li id="listTest"><a href="listTest">글목록테스트</a></li>
             <li id="mapTest"><a href="mapTest">지도테스트</a></li>
+            <li id="imageTest"><a href="imageTest">이미지테스트</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="signin"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="signin"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
         </ul>
     </div>
 </nav>
@@ -30,6 +31,8 @@
     $( "#listTest" ).addClass( 'active' );
 {% elif url == "mapTest" %}
     $( "#mapTest" ).addClass( 'active' );
+{% elif url == "imageTest" %}
+    $( "#imageTest" ).addClass( 'active' );
 
 {% endif %}
 
