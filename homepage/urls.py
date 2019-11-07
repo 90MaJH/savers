@@ -8,6 +8,11 @@ urlpatterns = [
     path('', views.index, name='defaultIndex'),
     path('index', views.index, name='index'),
     path('findSenior', views.findSenior, name='findSenior'),
+    path('chattingList', views.chattingListView, name='chattingList'),
+    path('chatting', views.chattingView, name='chatting'),
+
+
+    ##test urls
     path('test', views.test, name='test'),
     path('listTest', views.listTest, name='listTest'),
     path('mapTest', views.mapTest, name='mapTest'),

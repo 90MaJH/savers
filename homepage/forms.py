@@ -6,6 +6,11 @@ from django import forms
 from .models import Post
 from django_summernote.widgets import SummernoteWidget
 
+
+
+
+
+##test form
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post

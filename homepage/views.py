@@ -10,6 +10,22 @@ from .models import Post
 from homepage.forms import PostForm
 
 
+##findSenior Views
+def findSenior(request):
+    url = "findSenior"
+    return render(request, 'homepage/findSenior/findSenior.html', {'url':url})
+
+##chatting Views
+def chattingListView(request):
+    url = "chattingList"
+    return render(request, 'homepage/chatting/chattingList.html', {'url':url})
+
+def chattingView(request):
+    url = "chattingList"
+    return render(request, 'homepage/chatting/chatting.html', {'url':url})
+
+
+## test views
 def test(request):
     url = "test"
     if request.method == 'POST':
@@ -26,7 +42,6 @@ def test(request):
         form = PostForm()
         return render(request, 'homepage/test/test.html', {'form': form, 'url': url})
 
-
 def listTest(request):
     url = "listTest"
     posts = Post.objects.all()
@@ -37,9 +52,7 @@ def index(request):
     url = "index"
     return render(request, 'homepage/main/index.html', {'url':url})
 
-def findSenior(request):
-    url = "findSenior"
-    return render(request, 'homepage/findSenior/findSenior.html', {'url':url})
+
 
 def mapTest(request):
     url = "mapTest"
