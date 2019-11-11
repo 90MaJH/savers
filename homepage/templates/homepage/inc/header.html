@@ -13,8 +13,14 @@
             <li id="chatting"><a href="chatting">채팅</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+            <li><a href="signup_test"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+            {% if user.username %}
+            <li><a href="logout_test"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+            <li><a href="profile"><span class="glyphicon glyphicon-cog"></span></a></li>
+            {% else %}
+            <li><a href="login_test"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+            {% endif %}
         </ul>
     </div>
 </nav>

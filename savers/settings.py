@@ -135,3 +135,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 DEBUG = True
 
 # print(STATIC_ROOT)
+
+
+##user setting
+AUTH_USER_MODEL = 'homepage.user'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'

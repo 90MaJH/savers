@@ -1,0 +1,29 @@
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+
+.row.context{
+margin: 0% 10% 0% 10%
+}
+
+
+/*text Area*/
+.purple-border textarea {
+    border: 1px solid #ba68c8;
+}
+.purple-border .form-control:focus {
+    border: 1px solid #ba68c8;
+    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+}
+
+
+/*buttons*/
+.btn.btn-info.context{
+    margin-top: 15px;
+    width:100%;
+}
