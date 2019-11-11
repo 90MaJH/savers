@@ -144,3 +144,8 @@ MEDIA_URL = '/upload_files/' # 항상 / 로 끝나도록 설정
 
 # 업로드된 파일을 저장할 디렉토리 경로
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
+##user setting
+AUTH_USER_MODEL = 'homepage.user'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'

@@ -1,0 +1,120 @@
+{% extends 'homepage/base/base.html' %}
+
+
+{% block content %}
+{% include 'homepage/inc/profile.html' %}
+
+<div class="container">
+    <div class="row context">
+        <div class="col-sm-3">
+            <img src="https://ptetutorials.com/images/user-profile.png" alt="" class="img-rounded img-responsive" />
+        </div>
+        <div class="col-sm-9">
+            <h4>
+                Bhaumik Patel</h4>
+            <small><cite title="San Francisco, USA">San Francisco, USA <i class="glyphicon glyphicon-map-marker">
+            </i></cite></small>
+            <p>
+                <i class="glyphicon glyphicon-envelope"></i>email@example.com
+                <br />
+                <i class="glyphicon glyphicon-globe"></i><a href="http://www.jquery2dotnet.com">www.jquery2dotnet.com</a>
+                <br />
+                <i class="glyphicon glyphicon-gift"></i>June 02, 1988</p>
+            <!-- Split button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">
+                    Social</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span><span class="sr-only">Social</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="https://plus.google.com/+Jquery2dotnet/posts">Google +</a></li>
+                    <li><a href="https://www.facebook.com/jquery2dotnet">Facebook</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <br><br>
+            <div class="form-group purple-border">
+                <label for="exampleFormControlTextarea4"><h4>프로필 및 이력서</h4></label>
+                <textarea class="form-control" id="exampleFormControlTextarea4" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="boxes">
+                <div class="row checkboxList">
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-1">
+                        <label for="box-1">진로상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-2">
+                        <label for="box-2">연애상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-3">
+                        <label for="box-3">수능상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-3">
+                        <label for="box-3">수능상담</label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-1">
+                        <label for="box-1">진로상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-2">
+                        <label for="box-2">연애상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-3">
+                        <label for="box-3">수능상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-3">
+                        <label for="box-3">수능상담</label>
+                    </div>
+
+                    <br><br>
+
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-1">
+                        <label for="box-1">진로상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-2">
+                        <label for="box-2">연애상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-3">
+                        <label for="box-3">수능상담</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" id="box-3">
+                        <label for="box-3">수능상담</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-info context">포인트이력</button>
+        </div>
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-info context">크레딧이력</button>
+        </div>
+        <div class="col-sm-12">
+            <button type="button" class="btn btn-info context">계정관리</button>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
